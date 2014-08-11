@@ -1,0 +1,53 @@
+@red: #F35F4d;
+
+// header
+#header {
+  &.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+  }
+  .navbar{
+    margin-bottom: 0px;
+  }
+  .navbar-brand {
+    font-size: 25px;
+    .red {
+      display: inline-block;
+      padding: 3px;
+
+      text-transform: uppercase;
+      color: #fff;
+      background: @red;
+    }
+    span {
+      margin-left: -5px;
+    }
+  }
+
+  .navbar-nav {
+    li {
+      a {
+        cursor: pointer;
+      }
+      &:hover {
+        a {
+          color: #fff;
+          background: rgba(243, 95, 77, 0.5);
+        }
+      }
+    }
+    .active {
+      a {
+        color: #fff;
+        background-color: @red;
+        &:hover{
+          background-color: @red;
+        }
+      }
+    }
+  }
+
+}

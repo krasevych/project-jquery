@@ -1,0 +1,37 @@
+#header.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 999;
+}
+#header .navbar {
+  margin-bottom: 0px;
+}
+#header .navbar-brand {
+  font-size: 25px;
+}
+#header .navbar-brand .red {
+  display: inline-block;
+  padding: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #f35f4d;
+}
+#header .navbar-brand span {
+  margin-left: -5px;
+}
+#header .navbar-nav li a {
+  cursor: pointer;
+}
+#header .navbar-nav li:hover a {
+  color: #fff;
+  background: rgba(243, 95, 77, 0.5);
+}
+#header .navbar-nav .active a {
+  color: #fff;
+  background-color: #f35f4d;
+}
+#header .navbar-nav .active a:hover {
+  background-color: #f35f4d;
+}
