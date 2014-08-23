@@ -1,5 +1,194 @@
-#service{
-  .service{
+@red-line: #e84306;
+@green-line: #42db81;
+@blue-line: #24a9ff;
+@orange-line:#FFA500;
+@text:#414141;
 
+.rotate(@deg){
+  -ms-transform: rotate(@deg); /* IE 9 */
+  -webkit-transform: rotate(@deg); /* Chrome, Safari, Opera */
+  transform: rotate(@deg);
+}
+.transition(@params) {
+  -webkit-transition: @params;
+  -moz-transition: @params;
+  -ms-transition: @params;
+  -o-transition: @params;
+  transition: @params;
+}
+
+
+#service {
+  .service {
+
+  }
+
+  [class*='line'] {
+    position: absolute;
+    width: 10em;
+    height: 1.1em;
+
+    border-radius: .3em;
+    box-shadow: 0px 0px 1px #888;
+
+  }
+  .line-t{
+    top: 0em;
+    left: 7em;
+  }
+  .line-tr{
+    top: 3.4em;
+    right: -1.1em;
+    .rotate(45deg)
+  }
+  .line-tl{
+    top: 3.4em;
+    left: -1.2em;
+    .rotate(-45deg)
+  }
+  .line-r{
+    top: 11.5em;
+    right: -4.5em;
+    .rotate(90deg)
+  }
+  .line-l{
+    top: 11.5em;
+    left: -4.5em;
+    .rotate(90deg)
+  }
+  .line-b{
+    bottom: 0em;
+    left: 7em;
+  }
+  .line-br{
+    bottom: 3.3em;
+    right: -1.1em;
+
+    .rotate(-45deg)
+  }
+  .line-bl{
+    bottom: 3.3em;
+    left: -1.2em;
+
+    .rotate(45deg)
+  }
+  .icon-box {
+    position: relative;
+    display: inline-block;
+    margin-top: 10em;
+    width: 24em;
+    height: 24em;
+
+    img{
+      width: 15em;
+      height: auto;
+      margin-top: 4em;
+    }
+  }
+
+    &>div>div{
+      [class*='line'] {
+        .transition(all 0.5s );
+        background:#ececec;
+      }
+      h3{
+        text-align: center;
+        color: @text;
+        font:18px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-transform: uppercase;
+
+        span{
+          position: relative;
+          display: inline-block;
+          &:before,&:after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            background: @red-line;
+          }
+          &:after{
+            left: 20%;
+            width: 60%;
+            margin-top: 5px;
+          }
+        }
+      }
+      .text-box{
+        margin-top: 30px;
+        text-align: justify;
+        color: #888;
+        font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+    }
+
+  .design {
+    text-align: center;
+    img{
+      width: 18em;
+      margin-top: 5em;
+    }
+    &:hover{
+      [class*='line'] {
+        background: @blue-line;
+        box-shadow: 0px 0px 1px @blue-line;
+      }
+    }
+    h3{
+      span{
+        &:before, &:after{
+          background: @blue-line;
+        }
+      }
+    }
+    }
+  .responsive {
+    text-align: center;
+    img{
+      width: 18em;
+      margin-top: 5em;
+    }
+    &:hover{
+      [class*='line'] {
+        background: @green-line;
+        box-shadow: 0px 0px 1px @green-line;
+      }
+    }
+
+    h3{
+      span{
+        &:before, &:after{
+          background:@green-line ;
+        }
+      }
+    }
+  }
+  .developer {
+    text-align: center;
+    &:hover{
+      [class*='line'] {
+        background: @red-line;
+        box-shadow: 0px 0px 1px @red-line;
+      }
+    }
+  }
+  .seo {
+    text-align: center;
+    &:hover{
+      [class*='line'] {
+        background: @orange-line;
+        box-shadow: 0px 0px 1px @orange-line;
+      }
+    }
+
+    h3{
+      span{
+        &:before, &:after{
+          background:@orange-line;
+        }
+      }
+    }
   }
 }

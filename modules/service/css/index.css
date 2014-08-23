@@ -1,0 +1,168 @@
+#service [class*='line'] {
+  position: absolute;
+  width: 10em;
+  height: 1.1em;
+  border-radius: .3em;
+  box-shadow: 0px 0px 1px #888;
+}
+#service .line-t {
+  top: 0em;
+  left: 7em;
+}
+#service .line-tr {
+  top: 3.4em;
+  right: -1.1em;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+#service .line-tl {
+  top: 3.4em;
+  left: -1.2em;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+#service .line-r {
+  top: 11.5em;
+  right: -4.5em;
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+#service .line-l {
+  top: 11.5em;
+  left: -4.5em;
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+#service .line-b {
+  bottom: 0em;
+  left: 7em;
+}
+#service .line-br {
+  bottom: 3.3em;
+  right: -1.1em;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+#service .line-bl {
+  bottom: 3.3em;
+  left: -1.2em;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+#service .icon-box {
+  position: relative;
+  display: inline-block;
+  margin-top: 10em;
+  width: 24em;
+  height: 24em;
+}
+#service .icon-box img {
+  width: 15em;
+  height: auto;
+  margin-top: 4em;
+}
+#service > div > div [class*='line'] {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #ececec;
+}
+#service > div > div h3 {
+  text-align: center;
+  color: #414141;
+  font: 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+#service > div > div h3 span {
+  position: relative;
+  display: inline-block;
+}
+#service > div > div h3 span:before,
+#service > div > div h3 span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #e84306;
+}
+#service > div > div h3 span:after {
+  left: 20%;
+  width: 60%;
+  margin-top: 5px;
+}
+#service > div > div .text-box {
+  margin-top: 30px;
+  text-align: justify;
+  color: #888;
+  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#service .design {
+  text-align: center;
+}
+#service .design img {
+  width: 18em;
+  margin-top: 5em;
+}
+#service .design:hover [class*='line'] {
+  background: #24a9ff;
+  box-shadow: 0px 0px 1px #24a9ff;
+}
+#service .design h3 span:before,
+#service .design h3 span:after {
+  background: #24a9ff;
+}
+#service .responsive {
+  text-align: center;
+}
+#service .responsive img {
+  width: 18em;
+  margin-top: 5em;
+}
+#service .responsive:hover [class*='line'] {
+  background: #42db81;
+  box-shadow: 0px 0px 1px #42db81;
+}
+#service .responsive h3 span:before,
+#service .responsive h3 span:after {
+  background: #42db81;
+}
+#service .developer {
+  text-align: center;
+}
+#service .developer:hover [class*='line'] {
+  background: #e84306;
+  box-shadow: 0px 0px 1px #e84306;
+}
+#service .seo {
+  text-align: center;
+}
+#service .seo:hover [class*='line'] {
+  background: #ffa500;
+  box-shadow: 0px 0px 1px #ffa500;
+}
+#service .seo h3 span:before,
+#service .seo h3 span:after {
+  background: #ffa500;
+}
