@@ -1,0 +1,15 @@
+{
+  "name": "jquery-animate-css-rotate-scale",
+  "homepage": "https://github.com/zachstronaut/jquery-animate-css-rotate-scale",
+  "version": "0.9.3",
+  "_release": "0.9.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.9.3",
+    "commit": "46a0edb851e6efea4c5d283215bbf824aa005f93"
+  },
+  "_source": "https://github.com/zachstronaut/jquery-animate-css-rotate-scale.git",
+  "_target": "~0.9.3",
+  "_originalSource": "https://github.com/zachstronaut/jquery-animate-css-rotate-scale.git",
+  "_direct": true
+}

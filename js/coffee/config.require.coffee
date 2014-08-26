@@ -7,6 +7,7 @@ requirejs.config
     vegas: "bower_components/vegas/dist/jquery.vegas.min"
     easing: "bower_components/jquery.easing/js/jquery.easing.min"
     quicksand: "bower_components/jquery.quicksand/index"
+    scale: "bower_components/jquery-animate-css-rotate-scale/jquery-animate-css-rotate-scale"
 
 # modules
     header: "modules/header/js/index"
@@ -33,6 +34,7 @@ requirejs.config
     quicksand:
       deps: [
        'easing'
+        'scale'
       ]
       exports:'quicksand'
 

@@ -19,7 +19,8 @@
         duration: 800,
         attribute: 'id',
         adjustWidth: false,
-        easing: 'easeInOutQuad'
+        easing: 'easeOutCirc',
+        useScaling: true
       });
       $nav.removeClass('active');
       $el.parent().addClass('active');
