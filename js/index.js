@@ -6,8 +6,12 @@
       jquery: "bower_components/jquery/dist/jquery.min",
       bootstrap: "bower_components/bootstrap/dist/js/bootstrap.min",
       vegas: "bower_components/vegas/dist/jquery.vegas.min",
+      easing: "bower_components/jquery.easing/js/jquery.easing.min",
+      quicksand: "bower_components/jquery.quicksand/index",
       header: "modules/header/js/index",
-      home: "modules/home/js/index"
+      home: "modules/home/js/index",
+      service: "modules/service/js/index",
+      portfolio: "modules/portfolio/js/index"
     },
     shim: {
       bootstrap: {
@@ -17,12 +21,20 @@
       vegas: {
         deps: ['jquery'],
         exports: 'vegas'
+      },
+      easing: {
+        deps: ['bootstrap'],
+        exports: 'easing'
+      },
+      quicksand: {
+        deps: ['easing'],
+        exports: 'quicksand'
       }
     }
   });
 
-  requirejs(['jquery', 'bootstrap', 'vegas'], function() {
-    return requirejs(['header', 'home'], function() {});
+  requirejs(['jquery', 'bootstrap', 'vegas', 'easing', 'quicksand'], function() {
+    return requirejs(['header', 'home', 'service', 'portfolio'], function() {});
   });
 
 }).call(this);

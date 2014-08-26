@@ -6,6 +6,7 @@
     "normalize.css": "~3.0.1",
      "bootstrap":"*",
      "vegas":"*",
-     "requirejs":"*"
+     "requirejs":"*",
+     "jquery.easing":"*"
   }
 }

@@ -1,88 +1,70 @@
-@red-line: #e84306;
-@green-line: #42db81;
-@blue-line: #24a9ff;
-@orange-line:#FFA500;
-@text:#414141;
-
-.rotate(@deg){
-  -ms-transform: rotate(@deg); /* IE 9 */
-  -webkit-transform: rotate(@deg); /* Chrome, Safari, Opera */
-  transform: rotate(@deg);
-}
-.transition(@params) {
-  -webkit-transition: @params;
-  -moz-transition: @params;
-  -ms-transition: @params;
-  -o-transition: @params;
-  transition: @params;
-}
 
 
 #service {
-  .service {
-
+  &.service {
+    background: #fff;
+    padding-bottom: 5rem;
   }
 
   [class*='line'] {
     position: absolute;
-    width: 10em;
-    height: 1.1em;
+    width: 6.5rem;
+    height: .715rem;
 
-    border-radius: .3em;
+    border-radius: .2rem;
     box-shadow: 0px 0px 1px #888;
 
   }
   .line-t{
-    top: 0em;
-    left: 7em;
+    top: 0rem;
+    left: 4.45rem;
   }
   .line-tr{
-    top: 3.4em;
-    right: -1.1em;
+    top: 2.21rem;
+    right: -.715rem;
     .rotate(45deg)
   }
   .line-tl{
-    top: 3.4em;
-    left: -1.2em;
+    top: 2.21rem;
+    left: -.78rem;
     .rotate(-45deg)
   }
   .line-r{
-    top: 11.5em;
-    right: -4.5em;
+    top: 7.475rem;
+    right: -2.925rem;
     .rotate(90deg)
   }
   .line-l{
-    top: 11.5em;
-    left: -4.5em;
+    top: 7.475rem;
+    left: -2.925rem;
     .rotate(90deg)
   }
   .line-b{
-    bottom: 0em;
-    left: 7em;
+    bottom: 0rem;
+    left: 4.45rem;
   }
   .line-br{
-    bottom: 3.3em;
-    right: -1.1em;
+    bottom: 2.145rem;
+    right: -.715rem;
 
     .rotate(-45deg)
   }
   .line-bl{
-    bottom: 3.3em;
-    left: -1.2em;
+    bottom: 2.145rem;
+    left: -.78rem;
 
     .rotate(45deg)
   }
   .icon-box {
     position: relative;
     display: inline-block;
-    margin-top: 10em;
-    width: 24em;
-    height: 24em;
+    width: 15.6rem;
+    height: 15.6rem;
 
     img{
-      width: 15em;
+      width: 9.75rem;
       height: auto;
-      margin-top: 4em;
+      margin-top: 2.6rem;
     }
   }
 
@@ -95,7 +77,7 @@
         text-align: center;
         color: @text;
         font:18px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform: uppercase;
+        text-transform: capitalize;
 
         span{
           position: relative;
@@ -107,17 +89,19 @@
             left: 0px;
             width: 100%;
             height: 2px;
+            margin-top: .1rem;
             background: @red-line;
           }
           &:after{
             left: 20%;
             width: 60%;
-            margin-top: 5px;
+            margin-top: .6rem;
           }
         }
       }
       .text-box{
-        margin-top: 30px;
+        margin: 3rem 0rem 4rem;
+
         text-align: justify;
         color: #888;
         font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -127,8 +111,8 @@
   .design {
     text-align: center;
     img{
-      width: 18em;
-      margin-top: 5em;
+      width: 11.7rem;
+      margin-top: 3.25rem;
     }
     &:hover{
       [class*='line'] {
@@ -144,11 +128,17 @@
       }
     }
     }
+  .text-box{
+    &::selection {
+      background: #FC6D6D;
+      color: #FFF;
+    }
+  }
   .responsive {
     text-align: center;
     img{
-      width: 18em;
-      margin-top: 5em;
+      width: 11.7rem;
+      margin-top: 3.25rem;
     }
     &:hover{
       [class*='line'] {
@@ -184,6 +174,7 @@
     }
 
     h3{
+      text-transform: uppercase;
       span{
         &:before, &:after{
           background:@orange-line;
