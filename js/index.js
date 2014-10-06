@@ -12,7 +12,8 @@
       header: "modules/header/js/index",
       home: "modules/home/js/index",
       service: "modules/service/js/index",
-      portfolio: "modules/portfolio/js/index"
+      portfolio: "modules/portfolio/js/index",
+      about: "modules/about/js/index"
     },
     shim: {
       bootstrap: {
@@ -35,7 +36,7 @@
   });
 
   requirejs(['jquery', 'bootstrap', 'vegas', 'easing', 'quicksand'], function() {
-    return requirejs(['header', 'home', 'service', 'portfolio'], function() {});
+    return requirejs(['header', 'home', 'service', 'portfolio', 'about'], function() {});
   });
 
 }).call(this);

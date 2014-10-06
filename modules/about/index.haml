@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+%html
+ %head
+  %meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  %meta(name="language" content="en")
+  %title
+  %link(rel="stylesheet" href="../../css/index.css" type="text/css")
+  %script(type="text/javascript" data-main="../../js/index.js" src="/bower_components/requirejs/require.js")
+ %body
+  %section#about.about
+   .container
+    .header
+     %h2 about us
+     .description We have designed and developed many awesome products. Just take a look.
+    .row
+     .col-md-6.b-goal
+      %h2 our goals
+      #goal-according.panel-group
+       .panel.panel-default
+        .panel-heading
+         %h4.panel-title
+          %a(data-toggle="collapse" data-parent="#goal-according" href="#goal-1" ) goal 1
+        #goal-1.panel-collapse.collapse.in
+         .panel-body
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper.
+       .panel.panel-default
+        .panel-heading
+         %h4.panel-title
+          %a(data-toggle="collapse" data-parent="#goal-according" href="#goal-2" ) goal 2
+        #goal-2.panel-collapse.collapse
+         .panel-body
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper.
+       .panel.panel-default
+        .panel-heading
+         %h4.panel-title
+          %a(data-toggle="collapse" data-parent="#goal-according" href="#goal-3" ) goal 3
+        #goal-3.panel-collapse.collapse
+         .panel-body
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper.
+       .panel.panel-default
+        .panel-heading
+         %h4.panel-title
+          %a(data-toggle="collapse" data-parent="#goal-according" href="#goal-4" ) goal 4
+        #goal-4.panel-collapse.collapse
+         .panel-body
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper.
+       .panel.panel-default
+        .panel-heading
+         %h4.panel-title
+          %a(data-toggle="collapse" data-parent="#goal-according" href="#goal-5" ) goal 5
+        #goal-5.panel-collapse.collapse
+         .panel-body
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper.
+
+     .col-md-6.b-skills
+      %h2 our skills
+      %ul.skills
+       %li.dev
+        %h3 development
+        .progress
+         .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%")
+          %span.sr-only
+
+       %li.seo
+        %h3 seo
+        .progress
+         .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 78%")
+          %span.sr-only
+       %li.des
+        %h3 design
+        .progress
+         .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 87%")
+          %span.sr-only
+       %li.cs
+        %h3 customers support
+        .progress
+         .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 87%")
+          %span.sr-only
+

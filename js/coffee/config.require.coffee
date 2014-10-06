@@ -14,6 +14,7 @@ requirejs.config
     home: "modules/home/js/index"
     service: "modules/service/js/index"
     portfolio: "modules/portfolio/js/index"
+    about: "modules/about/js/index"
 
   shim:
     bootstrap:
@@ -40,4 +41,4 @@ requirejs.config
 
 
 requirejs ['jquery','bootstrap', 'vegas','easing','quicksand'], ()->
-  requirejs ['header', 'home','service','portfolio'], ()->
+  requirejs ['header', 'home','service','portfolio','about'], ()->
