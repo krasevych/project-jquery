@@ -1,0 +1,80 @@
+#about{
+  &.about{
+
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+  .b-goal,.b-skills{
+    h2,h3{
+      text-transform: capitalize;
+    }
+
+    h2{
+      font-size: 3rem;
+    }
+
+    h3{
+      font-size: 2rem;
+    }
+  }
+  .b-skills{
+    ul{
+      padding: 0rem;
+    }
+    li{
+      display: block;
+    }
+    .progress{
+      height: 1.5rem;
+    }
+    .skills{
+      &>*{
+        position: relative;
+
+        .progress{
+         margin-bottom: 0.5rem;
+        }
+      }
+      .progress-val{
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        font-size: 2rem;
+      }
+      .desc{
+        font-size: 1.3rem;
+      }
+      .dev{
+        .progress-bar{
+          background-color: $red;
+        }
+      }
+      .des{
+        .progress-bar{
+          background-color: $blue-line;
+        }
+      }
+      .cs{
+        .progress-bar{
+          background-color: $green-line;
+        }
+      }
+      .seo{
+        h3{
+          text-transform: uppercase;
+        }
+        .progress-bar{
+          background-color: $orange-line;
+        }
+      }
+    }
+  }
+  .panel-group {
+    margin-top: 20px;
+    .panel-heading{
+      background: #fbfbfb;
+    }
+  }
+}

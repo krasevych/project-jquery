@@ -1,0 +1,24 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+
+@import 'compass/css3';
+/* Space out content a bit */
+body {
+@include transition(55);
+}
+
+@import "mixins.scss";
+@import "fonts.scss";
+@import "layout.scss";
+
+//modules
+@import "../components/header/main.scss";
+@import "../components/home/main.scss";
+@import "../components/service/main.scss";
+@import "../components/portfolio/main.scss";
+@import "../components/about/main.scss";
+@import "../components/footer/main.scss";
