@@ -26,22 +26,35 @@ html, body {
 .site-footer {
   background: orange;
 }
-section .header{
-  margin: 10rem 0rem 7rem;
-  text-align: center;
+section {
+  .header{
+    margin: 10rem 0rem 7rem;
+    text-align: center;
 
-  h2{
-    margin-bottom: 0rem;
-    color: #565656;
-    font-size: 4rem;
-    font-weight: normal;
-    text-transform: uppercase;
+    h2{
+      margin-bottom: 0rem;
+      color: #565656;
+      font-size: 4rem;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    .description{
+      font-size: 1.8rem;
+      color: #aaa;
+      &:first-letter{
+        text-transform: capitalize;
+      }
+    }
   }
-  .description{
-    font-size: 1.8rem;
-    color: #aaa;
-    &:first-letter{
-      text-transform: capitalize;
+  &.white{
+    h2{
+      color: #f1f1f1;
+    }
+    h3{
+      color: #eee;
+    }
+    .description{
+      color: #e1e1e1;
     }
   }
 }

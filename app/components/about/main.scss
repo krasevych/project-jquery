@@ -1,12 +1,14 @@
 #about{
   &.about{
-
+    background: rgba(0, 0, 0, 0.5);
   }
 
   p{
     font-size: 1.5rem;
   }
   .b-goal,.b-skills{
+    margin-bottom: 3rem;
+
     h2,h3{
       text-transform: capitalize;
     }
@@ -44,7 +46,7 @@
         font-size: 2rem;
       }
       .desc{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
       .dev{
         .progress-bar{
@@ -75,6 +77,12 @@
     margin-top: 20px;
     .panel-heading{
       background: #fbfbfb;
+    }
+  }
+
+  &.white{
+    .progress-val, .desc{
+      color: #e1e1e1;
     }
   }
 }

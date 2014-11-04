@@ -1,9 +1,6 @@
-
-
 #service {
   &.service {
     background: #fff;
-    padding-bottom: 5rem;
   }
 
   [class*='line'] {
@@ -100,7 +97,7 @@
         }
       }
       .text-box{
-        margin: 3rem 0rem 4rem;
+        margin-top: 3rem;
 
         text-align: justify;
         color: #888;

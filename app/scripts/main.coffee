@@ -1,0 +1,1 @@
+time_change_photo=200

@@ -28,7 +28,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function () {
     return gulp.src(['app/components/**/*.coffee','app/scripts/*.coffee'])
-        .pipe($.coffee())
+        .pipe($.coffee({bare: true}))
         .pipe(gulp.dest('.tmp/scripts'));
 });
 
@@ -54,11 +54,12 @@ gulp.task('html', ['views', 'styles', 'scripts'], function () {
 
 gulp.task('images', function () {
     return gulp.src('app/images/**/*')
-        .pipe($.cache($.imagemin({
-            optimizationLevel: 3,
+        .pipe(plumber())
+        .pipe($.imagemin({
+            optimizationLevel: 4,
             progressive: true,
             interlaced: true
-        })))
+        }))
         .pipe(gulp.dest('dist/images'))
         .pipe($.size());
 });
@@ -138,9 +139,9 @@ gulp.task('watch', ['connect', 'serve'], function () {
         server.changed(file.path);
     });
 
-	gulp.watch('app/**/*.jade', ['views']);
-    gulp.watch('app/styles/**/*.scss', ['styles']);
-    gulp.watch('app/scripts/**/*.coffee', ['scripts']);
+	 gulp.watch('app/**/*.jade', ['views']);
+    gulp.watch('app/**/*.scss', ['styles']);
+    gulp.watch('app/**/*.coffee', ['scripts']);
     gulp.watch('app/images/**/*', ['images']);
     gulp.watch('bower.json', ['wiredep']);
 });
