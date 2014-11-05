@@ -71,12 +71,22 @@
           height: 3rem;
           text-align: center;
 
-          font-size: 2rem;
+          font-size: 1.7rem;
           line-height: 3rem;
           color: #fff;
           background: rgba(0, 0, 0, 0.3);
           text-transform: capitalize;
           cursor: default;
+          &:after{
+            content: '';
+            position: absolute;
+            left: 0rem;
+            bottom: 3rem;
+            width: 100%;
+            height: 0.5rem;
+
+            @include background-image(linear-gradient(rgba(77, 77, 77, 0.1), rgba(0, 0, 0, 0.3)));
+          }
 
 
 
@@ -139,13 +149,16 @@
           left: 5%;
           width: 90%;
           height: 90%;
-          background: rgba(243, 95, 77, 0.7);
+          background: rgba(0, 0, 0, 0.5);
 
           .p-name{
+            font-size: 2rem;
             top: 50%;
             margin-top: -4rem;
             background: none;
-
+            &:after{
+              display: none;
+            }
           }
           .b-btn{
             opacity: 1;

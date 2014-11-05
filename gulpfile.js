@@ -12,12 +12,14 @@ var plumber = require('gulp-plumber');
 
 gulp.task('views', function () {
     return gulp.src(['app/*.jade', '!app/layout.jade'])
+        .pipe(plumber())
         .pipe($.jade({pretty: true}))
         .pipe(gulp.dest('.tmp'));
 });
 
 gulp.task('styles', function() {
   gulp.src('app/styles/main.scss')
+    .pipe(plumber())
     .pipe(compass({
       css: '.tmp/styles',
       sass: 'app/styles',
@@ -28,6 +30,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function () {
     return gulp.src(['app/components/**/*.coffee','app/scripts/*.coffee'])
+        .pipe(plumber())
         .pipe($.coffee({bare: true}))
         .pipe(gulp.dest('.tmp/scripts'));
 });
@@ -66,6 +69,7 @@ gulp.task('images', function () {
 
 gulp.task('fonts', function () {
     return $.bowerFiles()
+        .pipe(plumber())
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
         .pipe($.flatten())
         .pipe(gulp.dest('dist/fonts'))

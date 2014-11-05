@@ -21,27 +21,5 @@ $red: #F35F4d;
       text-transform: uppercase;
     }
   }
-  .btn-box{
-    text-align: center;
-    margin-top: 30px;
-    .btn-start{
-      display: inline-block;
-      padding: 15px 35px;
 
-      border-radius: 3px;
-      text-transform: uppercase;
-      cursor: pointer;
-      font-size: 1.4rem;
-      font-weight: 700;
-      background: rgba(244,244,244,0.3);
-      border: 1px solid #fafafa;
-      @include transition(all 0.5s);
-
-      &:hover{
-        color: $red;
-        background: rgba(244,244,244,0.8);
-        font-weight: 700;
-      }
-    }
-  }
 }
