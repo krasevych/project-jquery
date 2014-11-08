@@ -8,7 +8,8 @@
      "vegas":"*",
      "jquery.easing":"*",
      "quicksandpaginated.jquery.js":"*",
-     "jquery.transit":"*"
+     "jquery.transit":"*",
+     "jquery.stapel":"*"
   },
   "devDependencies": {}
 }

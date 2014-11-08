@@ -116,6 +116,7 @@ gulp.task('wiredep', function () {
     var wiredep = require('wiredep').stream;
 
     gulp.src('app/styles/*.scss')
+        .pipe(plumber())
         .pipe(wiredep({
             directory: 'app/bower_components'
         }))
@@ -123,6 +124,7 @@ gulp.task('wiredep', function () {
 
 	//gulp.src('app/*.html')
     gulp.src('app/*.jade')
+        .pipe(plumber())
         .pipe(wiredep({
             directory: 'app/bower_components',
             exclude: ['bootstrap-sass-official']
