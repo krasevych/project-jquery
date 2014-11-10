@@ -103,7 +103,7 @@
   /* Custom elements style */
   .wrapper {
     position: relative;
-    padding: 0 0 50px 0;
+    padding: 0 0 5rem 0;
   }
 
   .topbar {
@@ -145,21 +145,42 @@
   .topbar h3 {
     display: inline-block;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 4rem;
     width: 49%;
     min-width: 320px;
+    color: #f1f1f1;
+
   }
 
-  .topbar h2 {
-    padding-right: 20px;
-    color: #666;
+  .topbar{
+    h2,h3{
+      margin: 1rem 0rem;
+    }
+    h2 {
+      float: left;
+      text-align: center;
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+    }
+    h3 {
+      float: right;
+      display: none;
+      text-align: right;
+      padding-left: 20px;
+    }
+    &.open{
+      h2{
+        display: inline-block;
+        text-align: left;
+        width: 49%;
+      }
+      h3{
+        display: inline-block;
+      }
+    }
   }
 
-  .topbar h3 {
-    text-align: right;
-    padding-left: 20px;
-    color: #aaa;
-  }
 
   /* Loader */
 
