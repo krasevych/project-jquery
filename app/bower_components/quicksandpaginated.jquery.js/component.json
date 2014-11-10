@@ -1,0 +1,9 @@
+{
+  "name": "quicksandpaginated",
+  "version": "0.0.9",
+  "main": ["quicksandpaginated.jquery.js"],
+  "dependencies": {
+    "jquery": ">=1.9",
+    "jquery.quicksand.js":"git://github.com/razorjack/quicksand.git"
+  }
+} 

@@ -1,0 +1,21 @@
+{
+  "name": "quicksandpaginated",
+  "version": "0.0.9",
+  "main": [
+    "quicksandpaginated.jquery.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9",
+    "jquery.quicksand.js": "git://github.com/razorjack/quicksand.git"
+  },
+  "homepage": "https://github.com/EtienneDion/quicksandpaginated.jquery.js",
+  "_release": "0.0.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.9",
+    "commit": "922a0d11f1b145ff66965e6227b5ba2fa93f0cec"
+  },
+  "_source": "git://github.com/EtienneDion/quicksandpaginated.jquery.js.git",
+  "_target": "*",
+  "_originalSource": "quicksandpaginated.jquery.js"
+}
