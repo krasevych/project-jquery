@@ -9,6 +9,8 @@ var compass = require('gulp-compass');
 var minifyCSS = require('gulp-minify-css');
 var sass = require('gulp-ruby-sass');
 var plumber = require('gulp-plumber');
+var karma = require('gulp-karma');
+
 
 gulp.task('views', function () {
     return gulp.src(['app/*.jade', '!app/layout.jade'])
@@ -86,10 +88,34 @@ gulp.task('clean', function () {
     return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
+var testFiles = [
+   'test/spec/*.js'
+];
+
+gulp.task('test', function() {
+   // Be sure to return the stream
+   return gulp.src(testFiles)
+
+       .pipe(karma({
+          configFile: 'karma.conf.js',
+          action: 'watch'
+       }))
+       .pipe(plumber())
+       .on('error', function(err) {
+          // Make sure failed tests cause gulp to exit non-zero
+          throw err;
+       });
+});
+
 gulp.task('build', ['html', 'images', 'fonts', 'extras']);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');
+   gulp.src(testFiles)
+       .pipe(karma({
+          configFile: 'karma.conf.js',
+          action: 'watch'
+       }));
 });
 
 gulp.task('connect', function () {
